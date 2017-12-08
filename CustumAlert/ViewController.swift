@@ -20,20 +20,13 @@ class ViewController: UIViewController,UIPopoverPresentationControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func clickSave(_ sender: UIBarButtonItem) {
-        let alert = UIAlertController(title: "Warning", message: "Message Warning", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: {action in
-            print("OK")
-        })
-        let yesAction = UIAlertAction(title: "Yes", style: .destructive, handler: {action in
-            print("YES")
-        })
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {action in
-            print("Cancel")
-        })
-        alert.addAction(okAction)
-        alert.addAction(yesAction)
-        alert.addAction(cancelAction)
-        self.present(alert, animated: true, completion: nil)
+        let popoverVC = self.storyboard?.instantiateViewController(withIdentifier: "PopoverView") as! AlertVC
+        popoverVC.modalPresentationStyle = UIModalPresentationStyle.popover
+        popoverVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+//        popoverVC.preferredContentSize = CGSize(width: 200, height: 200)
+        popoverVC.providesPresentationContextTransitionStyle = true
+        popoverVC.definesPresentationContext = true
+        self.present(popoverVC, animated: true, completion: nil)
     }
     
 
