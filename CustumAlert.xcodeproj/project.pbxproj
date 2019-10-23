@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186EFCFA2360681D00E78FB9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 186EFCF92360681D00E78FB9 /* .swiftlint.yml */; };
+		4AC93CB8BBF1EB90274E4981 /* Pods_CustumAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA2420A97A078E710D1EB22 /* Pods_CustumAlert.framework */; };
 		56CF3C391FD943B100745C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF3C381FD943B100745C92 /* AppDelegate.swift */; };
 		56CF3C3B1FD943B100745C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF3C3A1FD943B100745C92 /* ViewController.swift */; };
 		56CF3C3E1FD943B100745C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CF3C3C1FD943B100745C92 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186EFCF92360681D00E78FB9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		56CF3C351FD943B100745C92 /* CustumAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustumAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CF3C381FD943B100745C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56CF3C3A1FD943B100745C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		56CF3C3F1FD943B100745C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56CF3C421FD943B100745C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56CF3C441FD943B100745C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		626A6081FAB54B005CC4F8F7 /* Pods-CustumAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustumAlert.release.xcconfig"; path = "Target Support Files/Pods-CustumAlert/Pods-CustumAlert.release.xcconfig"; sourceTree = "<group>"; };
+		74D0FE101B8D5C2C687C368C /* Pods-CustumAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustumAlert.debug.xcconfig"; path = "Target Support Files/Pods-CustumAlert/Pods-CustumAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		DEA2420A97A078E710D1EB22 /* Pods_CustumAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustumAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC93CB8BBF1EB90274E4981 /* Pods_CustumAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162D158CEEF93DDCD5B327AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA2420A97A078E710D1EB22 /* Pods_CustumAlert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56CF3C2C1FD943B100745C92 = {
 			isa = PBXGroup;
 			children = (
 				56CF3C371FD943B100745C92 /* CustumAlert */,
 				56CF3C361FD943B100745C92 /* Products */,
+				DF1C796E625D1E24EEDC01E7 /* Pods */,
+				162D158CEEF93DDCD5B327AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				56CF3C381FD943B100745C92 /* AppDelegate.swift */,
+				186EFCF92360681D00E78FB9 /* .swiftlint.yml */,
 				56CF3C3A1FD943B100745C92 /* ViewController.swift */,
 				56CF3C3C1FD943B100745C92 /* Main.storyboard */,
 				56CF3C3F1FD943B100745C92 /* Assets.xcassets */,
@@ -64,6 +82,15 @@
 			path = CustumAlert;
 			sourceTree = "<group>";
 		};
+		DF1C796E625D1E24EEDC01E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74D0FE101B8D5C2C687C368C /* Pods-CustumAlert.debug.xcconfig */,
+				626A6081FAB54B005CC4F8F7 /* Pods-CustumAlert.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56CF3C471FD943B100745C92 /* Build configuration list for PBXNativeTarget "CustumAlert" */;
 			buildPhases = (
+				4AE2E31E79B64D9020FF9B55 /* [CP] Check Pods Manifest.lock */,
 				56CF3C311FD943B100745C92 /* Sources */,
 				56CF3C321FD943B100745C92 /* Frameworks */,
 				56CF3C331FD943B100745C92 /* Resources */,
+				EEA98EDA01DABFF7EA45A81F /* [CP] Embed Pods Frameworks */,
+				186EFCF82360658600E78FB9 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -91,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = HoangLuyen;
 				TargetAttributes = {
 					56CF3C341FD943B100745C92 = {
@@ -123,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186EFCFA2360681D00E78FB9 /* .swiftlint.yml in Resources */,
 				56CF3C431FD943B100745C92 /* LaunchScreen.storyboard in Resources */,
 				56CF3C401FD943B100745C92 /* Assets.xcassets in Resources */,
 				56CF3C3E1FD943B100745C92 /* Main.storyboard in Resources */,
@@ -130,6 +161,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		186EFCF82360658600E78FB9 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		4AE2E31E79B64D9020FF9B55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustumAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA98EDA01DABFF7EA45A81F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustumAlert/Pods-CustumAlert-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustumAlert/Pods-CustumAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		56CF3C311FD943B100745C92 /* Sources */ = {
@@ -177,6 +273,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +332,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +340,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -272,6 +372,7 @@
 		};
 		56CF3C481FD943B100745C92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D0FE101B8D5C2C687C368C /* Pods-CustumAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +387,7 @@
 		};
 		56CF3C491FD943B100745C92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626A6081FAB54B005CC4F8F7 /* Pods-CustumAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
