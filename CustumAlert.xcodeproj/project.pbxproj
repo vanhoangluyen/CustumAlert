@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		186EFCFA2360681D00E78FB9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 186EFCF92360681D00E78FB9 /* .swiftlint.yml */; };
+		186EFCFD23606A4D00E78FB9 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EFCFB23606A4D00E78FB9 /* CustomAlert.swift */; };
+		186EFCFE23606A4D00E78FB9 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186EFCFC23606A4D00E78FB9 /* CustomAlert.xib */; };
+		186EFD0123606AB300E78FB9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186EFCFF23606AB300E78FB9 /* TableViewCell.swift */; };
+		186EFD0223606AB300E78FB9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186EFD0023606AB300E78FB9 /* TableViewCell.xib */; };
 		4AC93CB8BBF1EB90274E4981 /* Pods_CustumAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA2420A97A078E710D1EB22 /* Pods_CustumAlert.framework */; };
 		56CF3C391FD943B100745C92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF3C381FD943B100745C92 /* AppDelegate.swift */; };
 		56CF3C3B1FD943B100745C92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF3C3A1FD943B100745C92 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 
 /* Begin PBXFileReference section */
 		186EFCF92360681D00E78FB9 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		186EFCFB23606A4D00E78FB9 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		186EFCFC23606A4D00E78FB9 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
+		186EFCFF23606AB300E78FB9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		186EFD0023606AB300E78FB9 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		56CF3C351FD943B100745C92 /* CustumAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustumAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CF3C381FD943B100745C92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56CF3C3A1FD943B100745C92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,10 @@
 				56CF3C381FD943B100745C92 /* AppDelegate.swift */,
 				186EFCF92360681D00E78FB9 /* .swiftlint.yml */,
 				56CF3C3A1FD943B100745C92 /* ViewController.swift */,
+				186EFCFF23606AB300E78FB9 /* TableViewCell.swift */,
+				186EFD0023606AB300E78FB9 /* TableViewCell.xib */,
+				186EFCFB23606A4D00E78FB9 /* CustomAlert.swift */,
+				186EFCFC23606A4D00E78FB9 /* CustomAlert.xib */,
 				56CF3C3C1FD943B100745C92 /* Main.storyboard */,
 				56CF3C3F1FD943B100745C92 /* Assets.xcassets */,
 				56CF3C411FD943B100745C92 /* LaunchScreen.storyboard */,
@@ -154,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				186EFCFA2360681D00E78FB9 /* .swiftlint.yml in Resources */,
+				186EFD0223606AB300E78FB9 /* TableViewCell.xib in Resources */,
 				56CF3C431FD943B100745C92 /* LaunchScreen.storyboard in Resources */,
 				56CF3C401FD943B100745C92 /* Assets.xcassets in Resources */,
 				56CF3C3E1FD943B100745C92 /* Main.storyboard in Resources */,
+				186EFCFE23606A4D00E78FB9 /* CustomAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186EFCFD23606A4D00E78FB9 /* CustomAlert.swift in Sources */,
+				186EFD0123606AB300E78FB9 /* TableViewCell.swift in Sources */,
 				56CF3C3B1FD943B100745C92 /* ViewController.swift in Sources */,
 				56CF3C391FD943B100745C92 /* AppDelegate.swift in Sources */,
 			);

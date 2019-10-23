@@ -24,13 +24,32 @@ class ViewController: UIViewController {
                     return
                 }
 //                strongSelf.customizeBackground()
-                strongSelf.customizeFont()
+//                strongSelf.customizeFont()
+                strongSelf.customizeViewController()
             }).disposed(by: dispose)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func customizeViewController() {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        
+        // Create custom content viewController
+        let contentViewController = CustomAlert()
+        contentViewController.preferredContentSize = contentViewController.view.bounds.size
+        alertController.setValue(contentViewController, forKey: "contentViewController")
+        let datas = makeList(Int.random(in: 3...7))
+        contentViewController.updateUI(message: "Hello world", items: datas)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func makeList(_ maxNum: Int) -> [Int] {
+        return (0..<maxNum).map { _ in .random(in: 1...20) }
     }
     
     func customizeBackground() {
